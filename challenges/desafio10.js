@@ -1,7 +1,7 @@
 db.produtos.find({
     valoresNutricionais: {
         $elemMatch: {
-            tipo: "calorias",
+            tipo: "proteínas",
             percentual: {
                 $gte: 30,
                 $lt: 40,
