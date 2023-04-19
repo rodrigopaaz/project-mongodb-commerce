@@ -1,5 +1,10 @@
 db.produtos.find({
-    proteinas: {
-        $lt: 50,
+    valoresNutricionais: {
+        $elemMatch: {
+            tipo: "calorias",
+            quantidade: {
+                $lt: 500,
+            },
+        },
     },
-});
+  }, { _id: 0, nome: 1 });
