@@ -1,5 +1,3 @@
-use("projeto");
-
 db.produtos
   .find({ vendidos: {
    $ne: 50,   
