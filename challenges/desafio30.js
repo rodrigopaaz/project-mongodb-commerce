@@ -1,7 +1,7 @@
 db.produtos.updateOne(
     { nome: "Big Mac" }, 
     {
-    $unset: { curtidas: "" },
+    $unset: { curtidas: 0 },
 },
 );
 db.produtos.find(
