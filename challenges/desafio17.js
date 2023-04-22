@@ -3,4 +3,4 @@ db.resumoProdutos.insert({
     totalProdutos: db.produtos.count(),
 });
 
-db.resumoProdutos.finf({}, { _id: 0, franquia: 1, totalProdutos: 1 });
+db.resumoProdutos.find({}, { _id: 0, franquia: 1, totalProdutos: 1 });
