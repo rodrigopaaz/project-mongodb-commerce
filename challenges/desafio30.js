@@ -5,6 +5,6 @@ db.produtos.updateOne(
 },
 );
 db.produtos.find(
-    { nome: { $ne: "Big Mac" } }, 
+    {}, 
 { nome: 1, _id: 0, curtidas: 1 },
 );
