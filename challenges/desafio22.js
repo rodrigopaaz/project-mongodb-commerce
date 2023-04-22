@@ -2,7 +2,7 @@ db.produtos.updateMany({}, {
     $set: { vendasPorDia: [0, 0, 0, 0, 0, 0, 0] },
 });
 
-db.produtos.updateMany({}, {
+db.produtos.updateOne({}, {
     $inc: { "vendasPorDia.3": 60 },
 });
 
